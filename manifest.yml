@@ -1,14 +1,9 @@
 applications:
-  - name: gocf
-    memory: 64M
+  - name: go-demo
+    memory: 512M
     instances: 1
-    host: gocf
-    domain: cfapps.io
+    host: go-demo-${random-word}
+    services:
+      - service-registry
     path: .
-    buildpack: git://github.com/hmalphettes/heroku-buildpack-go.git
-    env:
-      APP_ID: 0000000000000000000.apps.googleusercontent.com
-      APP_SECRET: xxxxxxxxxxxx
-      STOIC_SPREADSHEET_VERSION: stable
-      STOIC_AUTO_UPGRADER: resetAll
-      MAPPERJS_DEFAULT_STORE: es
+    buildpack: https://github.com/rhardt-pivotal/sidecar-buildpack.git
