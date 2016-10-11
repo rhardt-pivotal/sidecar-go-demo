@@ -1,0 +1,16 @@
+{
+	"ImportPath": "go-cloudfoundry-example",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "golang.org/x/net/publicsuffix",
+			"Rev": "819f4c5391c3fa3e3f7dab092b388a396c6723a8"
+		},
+		{
+			"ImportPath": "gopkg.in/resty.v0",
+			"Comment": "v0.8",
+			"Rev": "0eed47a8f8c2575a34a067585dc0853d91943ac4"
+		}
+	]
+}
